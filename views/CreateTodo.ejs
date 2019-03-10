@@ -1,0 +1,29 @@
+<%- include('includes/head.ejs') -%> 
+<%- include('includes/navigation.ejs') -%>
+<link rel="stylesheet" href="/CSS/main.css">
+<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+
+
+<body>
+  <form class="container mt-4" method="POST" action="<% if(edit) { %> /changeSave/<%=todo.id%> <% } else { %> /save <% } %>">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter title"
+        name = "title"
+          value = "<% if (edit) { %><%= todo.title %> <% } %> "
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Body</label>
+      <textarea name="body" class="form-control" cols="20" rows="5"><% if (edit) { %><%= todo.body %> <% } %> </textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</body>
+
+<%- include('includes/end.ejs') -%>

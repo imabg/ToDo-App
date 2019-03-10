@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') -%>
+<%- include('includes/navigation.ejs') -%>
+<link rel="stylesheet" href="/CSS/main.css">
+<link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+<body>
+    <main class = "container" >
+    <h1 class= "display-1">Todo App</h1>
+    <hr>
+<% for (let todo of todos) { %>
+    <div class = "main-block container ml-4 mt-4">
+<p class="todo"> 
+    <%= todo.title %>
+    <a href="/view/<%= todo.id %>" >
+    <i class="fa fa-edit"></i></a>
+    <a href = "/delete/<%= todo.id %>"<i class="fa fa-times"></i></a>
+  </p>
+    <br />
+    </div>
+<% }  %>
+    </main>
+    <footer>
+        Crafted By: <a href="https://abgoswami.netlify.com" target="_blank" class="abhay"> Abhay Goswami</a>
+    </footer>
+</body>
+<%- include('includes/end.ejs') -%>

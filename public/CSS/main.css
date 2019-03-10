@@ -1,0 +1,87 @@
+body {
+  background-color: #1d2623;
+}
+
+h1 {
+  font-family: 'Srisakdi', cursive;
+  color: #fb7f0b;
+}
+
+.nav {
+  background-color: #1d2623;
+}
+
+.nav-link {
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #fb7f0b;
+  text-decoration: underline;
+}
+
+.main-block {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: #fb7f0b;
+}
+
+.todo {
+  background-color: aliceblue;
+  color: #fb7f0b;
+  border-radius: 200px;
+  padding: 12px;
+  font-size: 22px;
+  display: inline;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.todo i {
+  visibility: hidden;
+}
+.todo:hover i {
+  visibility: visible;
+}
+
+.abhay {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  color: aliceblue;
+  display: inline-block;
+  text-align: center;
+}
+
+.abhay:hover,
+.abhay:active {
+  color: #fb7f0b;
+}
+
+.fa {
+  color: #fb7f0b;
+}
+
+.fa-times:hover,
+.fa-times:active {
+  color: red;
+}
+
+label {
+  color: #fb7f0b;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #fb7f0b;
+  color: aliceblue;
+}
+
+footer {
+  color: whitesmoke;
+}
